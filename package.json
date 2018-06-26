@@ -1,0 +1,38 @@
+{
+    "name": "copy-video",
+    "version": "0.0.1",
+    "description": "copy video element to show",
+    "keywords": [
+    ],
+    "license": "MIT",
+    "engines": {
+        "node": ">=6"
+    },
+    "dependencies": {
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:yanxianliang/copy-video.git"
+    },
+    "main": "./lib/index",
+    "module": "./es/index",
+    "scripts": {
+        "start": "react-scripts-ts start",
+        "build": "react-scripts-ts build",
+        "test": "react-scripts-ts test --env=jsdom",
+        "eject": "react-scripts-ts eject",
+        "prepublish": "rc-tools run guard",
+        "pub": "rc-tools run pub --babel-runtime",
+        "compile":"rc-tools run compile"
+    },
+    "files": [
+        "lib",
+        "es",
+        "dist"
+    ],
+    "devDependencies": {
+        "@types/node": "^10.3.2",
+        "typescript": "^2.9.1",
+        "rc-tools":"^8.0.1"
+    }
+}
